@@ -8,6 +8,10 @@
 
 import XCTest
 
+operator infix =====> { associativity left precedence 140 }
+@infix func =====> (left: String, right: String){
+    assert(left == right)
+}
 class AssertOperatorTests: XCTestCase {
     
     override func setUp() {
@@ -21,15 +25,6 @@ class AssertOperatorTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        "String" + "Liraral" =====> "StringLiralal"
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
