@@ -20,6 +20,8 @@ operator infix =====> { associativity left precedence 140 }
 }
 ```
 
+Custom operators can be defined only with the characters `/ = - + * % < > ! & | ^ . ~.`
+
 ## Contributing
 
 1. Fork it!
